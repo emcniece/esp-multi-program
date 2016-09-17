@@ -1,0 +1,441 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ESP8266
+LIBS:ws2812b
+LIBS:esp-multi-program-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-12E U1
+U 1 1 57DD9A8B
+P 2250 1650
+F 0 "U1" H 2250 1550 50  0000 C CNN
+F 1 "ESP-12E" H 2250 1750 50  0000 C CNN
+F 2 "ESP8266:ESP-12E" H 2250 1650 50  0001 C CNN
+F 3 "" H 2250 1650 50  0001 C CNN
+	1    2250 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESP-01v090 U2
+U 1 1 57DD9AC7
+P 6000 1700
+F 0 "U2" H 6000 1600 50  0000 C CNN
+F 1 "ESP-01v090" H 6000 1800 50  0000 C CNN
+F 2 "ESP8266:ESP-01" H 6000 1700 50  0001 C CNN
+F 3 "" H 6000 1700 50  0001 C CNN
+	1    6000 1700
+	1    0    0    -1  
+$EndComp
+Text Label 1350 1650 2    60   ~ 0
+GPIO_16
+Text Label 1350 1750 2    60   ~ 0
+GPIO_14
+Text Label 1350 1850 2    60   ~ 0
+GPIO_12
+Text Label 1350 1950 2    60   ~ 0
+GPIO_13
+Text Label 1350 2050 2    60   ~ 0
+VCC
+Text Label 3150 1550 0    60   ~ 0
+GPIO_5
+Text Label 3150 1650 0    60   ~ 0
+GPIO_4
+Text Label 3150 1750 0    60   ~ 0
+GPIO_0
+Text Label 3150 1850 0    60   ~ 0
+GPIO_2
+Text Label 3150 1950 0    60   ~ 0
+GPIO_15
+Text Label 2200 2550 3    60   ~ 0
+GPIO_9
+Text Label 2300 2550 3    60   ~ 0
+GPIO_10
+Text Label 6950 1650 0    60   ~ 0
+GPIO_2
+Text Label 6950 1750 0    60   ~ 0
+GPIO_0
+Text Label 5050 1850 2    60   ~ 0
+VCC
+Text Label 3150 1350 0    60   ~ 0
+TX
+Text Label 3150 1450 0    60   ~ 0
+RX
+Text Label 6950 1850 0    60   ~ 0
+RX
+Text Label 5050 1550 2    60   ~ 0
+TX
+Text Label 5050 1650 2    60   ~ 0
+CH_PD
+Text Label 1350 1550 2    60   ~ 0
+CH_PD
+$Comp
+L GND #PWR01
+U 1 1 57DD9FA1
+P 1600 4350
+F 0 "#PWR01" H 1600 4100 50  0001 C CNN
+F 1 "GND" H 1600 4200 50  0000 C CNN
+F 2 "" H 1600 4350 50  0000 C CNN
+F 3 "" H 1600 4350 50  0000 C CNN
+	1    1600 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 57DD9FBB
+P 1600 3750
+F 0 "#PWR02" H 1600 3600 50  0001 C CNN
+F 1 "+3.3V" H 1600 3890 50  0000 C CNN
+F 2 "" H 1600 3750 50  0000 C CNN
+F 3 "" H 1600 3750 50  0000 C CNN
+	1    1600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR03
+U 1 1 57DD9FD9
+P 2450 3750
+F 0 "#PWR03" H 2450 3600 50  0001 C CNN
+F 1 "+3.3V" H 2450 3890 50  0000 C CNN
+F 2 "" H 2450 3750 50  0000 C CNN
+F 3 "" H 2450 3750 50  0000 C CNN
+	1    2450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 57DDA094
+P 2450 4000
+F 0 "R1" V 2530 4000 50  0000 C CNN
+F 1 "R" V 2450 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2380 4000 50  0001 C CNN
+F 3 "" H 2450 4000 50  0000 C CNN
+	1    2450 4000
+	1    0    0    -1  
+$EndComp
+Text Label 2450 4150 3    60   ~ 0
+CH_PD
+Text Label 1600 3850 3    60   ~ 0
+VCC
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 57DDA146
+P 1750 3800
+F 0 "#FLG04" H 1750 3895 50  0001 C CNN
+F 1 "PWR_FLAG" H 1750 3980 50  0000 C CNN
+F 2 "" H 1750 3800 50  0000 C CNN
+F 3 "" H 1750 3800 50  0000 C CNN
+	1    1750 3800
+	0    1    1    0   
+$EndComp
+Text Label 1600 4250 1    60   ~ 0
+GND
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 57DDA186
+P 1750 4300
+F 0 "#FLG05" H 1750 4395 50  0001 C CNN
+F 1 "PWR_FLAG" H 1750 4480 50  0000 C CNN
+F 2 "" H 1750 4300 50  0000 C CNN
+F 3 "" H 1750 4300 50  0000 C CNN
+	1    1750 4300
+	0    1    1    0   
+$EndComp
+Text Label 6950 1550 0    60   ~ 0
+GND
+Text Label 3150 2050 0    60   ~ 0
+GND
+$Comp
+L R R2
+U 1 1 57DDA2A0
+P 2800 4000
+F 0 "R2" V 2880 4000 50  0000 C CNN
+F 1 "R" V 2800 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2730 4000 50  0001 C CNN
+F 3 "" H 2800 4000 50  0000 C CNN
+	1    2800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR06
+U 1 1 57DDA34E
+P 2800 3750
+F 0 "#PWR06" H 2800 3600 50  0001 C CNN
+F 1 "+3.3V" H 2800 3890 50  0000 C CNN
+F 2 "" H 2800 3750 50  0000 C CNN
+F 3 "" H 2800 3750 50  0000 C CNN
+	1    2800 3750
+	1    0    0    -1  
+$EndComp
+Text Label 2900 4200 0    60   ~ 0
+RESET
+Text Label 5050 1750 2    60   ~ 0
+RESET
+Text Label 1350 1350 2    60   ~ 0
+RESET
+Text Label 1350 1450 2    60   ~ 0
+ADC
+$Comp
+L GND #PWR07
+U 1 1 57DDA662
+P 2800 4700
+F 0 "#PWR07" H 2800 4450 50  0001 C CNN
+F 1 "GND" H 2800 4550 50  0000 C CNN
+F 2 "" H 2800 4700 50  0000 C CNN
+F 3 "" H 2800 4700 50  0000 C CNN
+	1    2800 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3750 1600 3850
+Wire Wire Line
+	1300 3800 1750 3800
+Connection ~ 1600 3800
+Wire Wire Line
+	1600 4250 1600 4350
+Wire Wire Line
+	1300 4300 1750 4300
+Connection ~ 1600 4300
+Wire Wire Line
+	2450 3850 2450 3750
+Wire Wire Line
+	2800 3750 2800 3850
+Wire Wire Line
+	2800 4150 2800 4300
+Connection ~ 2800 4200
+Text Label 2000 2550 3    60   ~ 0
+CS
+Text Label 2100 2550 3    60   ~ 0
+MISO
+Text Label 2400 2550 3    60   ~ 0
+MOSI
+Text Label 2500 2550 3    60   ~ 0
+SCK
+$Comp
+L CONN_01X08 P1
+U 1 1 57DDA928
+P 5300 3650
+F 0 "P1" H 5300 4100 50  0000 C CNN
+F 1 "CONN_01X08" V 5400 3650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 5300 3650 50  0001 C CNN
+F 3 "" H 5300 3650 50  0000 C CNN
+	1    5300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X08 P2
+U 1 1 57DDA980
+P 5300 4700
+F 0 "P2" H 5300 5150 50  0000 C CNN
+F 1 "CONN_01X08" V 5400 4700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 5300 4700 50  0001 C CNN
+F 3 "" H 5300 4700 50  0000 C CNN
+	1    5300 4700
+	1    0    0    -1  
+$EndComp
+Text Label 5100 3300 2    60   ~ 0
+TX
+Text Label 5100 3400 2    60   ~ 0
+RX
+Text Label 5100 3500 2    60   ~ 0
+GPIO_5
+Text Label 5100 3600 2    60   ~ 0
+GPIO_4
+Text Label 5100 3700 2    60   ~ 0
+GPIO_0
+Text Label 5100 3800 2    60   ~ 0
+GPIO_2
+Text Label 5100 3900 2    60   ~ 0
+GPIO_15
+Text Label 5100 4000 2    60   ~ 0
+GND
+Text Label 5100 4350 2    60   ~ 0
+RESET
+Text Label 5100 4450 2    60   ~ 0
+ADC
+Text Label 5100 4550 2    60   ~ 0
+CH_PD
+Text Label 5100 4650 2    60   ~ 0
+GPIO_16
+Text Label 5100 4750 2    60   ~ 0
+GPIO_14
+Text Label 5100 4850 2    60   ~ 0
+GPIO_12
+Text Label 5100 4950 2    60   ~ 0
+GPIO_13
+Text Label 5100 5050 2    60   ~ 0
+VCC
+$Comp
+L R R3
+U 1 1 57DDADFF
+P 3450 4000
+F 0 "R3" V 3530 4000 50  0000 C CNN
+F 1 "R" V 3450 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3380 4000 50  0001 C CNN
+F 3 "" H 3450 4000 50  0000 C CNN
+	1    3450 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 57DDAE45
+P 3450 4700
+F 0 "#PWR08" H 3450 4450 50  0001 C CNN
+F 1 "GND" H 3450 4550 50  0000 C CNN
+F 2 "" H 3450 4700 50  0000 C CNN
+F 3 "" H 3450 4700 50  0000 C CNN
+	1    3450 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR09
+U 1 1 57DDAE71
+P 3450 3750
+F 0 "#PWR09" H 3450 3600 50  0001 C CNN
+F 1 "+3.3V" H 3450 3890 50  0000 C CNN
+F 2 "" H 3450 3750 50  0000 C CNN
+F 3 "" H 3450 3750 50  0000 C CNN
+	1    3450 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4150 3450 4300
+Wire Wire Line
+	3450 3850 3450 3750
+Text Label 3550 4200 0    60   ~ 0
+GPIO_0
+Wire Wire Line
+	3550 4200 3450 4200
+Connection ~ 3450 4200
+Wire Wire Line
+	2800 4200 2900 4200
+$Comp
+L PTS645 SW1
+U 1 1 57DDBB49
+P 2850 4450
+F 0 "SW1" H 2850 4350 60  0000 C CNN
+F 1 "PTS645" H 2850 4550 60  0000 C CNN
+F 2 "particle:PTS645" H 2850 4450 60  0001 C CNN
+F 3 "" H 2850 4450 60  0001 C CNN
+	1    2850 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L PTS645 SW2
+U 1 1 57DDBB97
+P 3500 4450
+F 0 "SW2" H 3500 4350 60  0000 C CNN
+F 1 "PTS645" H 3500 4550 60  0000 C CNN
+F 2 "particle:PTS645" H 3500 4450 60  0001 C CNN
+F 3 "" H 3500 4450 60  0001 C CNN
+	1    3500 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 4300 3500 4300
+Wire Wire Line
+	2800 4300 2850 4300
+Wire Wire Line
+	2850 4600 2800 4600
+Wire Wire Line
+	2800 4600 2800 4700
+Wire Wire Line
+	3500 4600 3450 4600
+Wire Wire Line
+	3450 4600 3450 4700
+$Comp
+L CONN_01X06 P3
+U 1 1 57DDC419
+P 6700 3650
+F 0 "P3" H 6700 4000 50  0000 C CNN
+F 1 "CONN_01X06" V 6800 3650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 6700 3650 50  0001 C CNN
+F 3 "" H 6700 3650 50  0000 C CNN
+	1    6700 3650
+	1    0    0    -1  
+$EndComp
+Text Label 6500 3400 2    60   ~ 0
+SCK
+Text Label 6500 3500 2    60   ~ 0
+MOSI
+Text Label 6500 3600 2    60   ~ 0
+GPIO_10
+Text Label 6500 3700 2    60   ~ 0
+GPIO_9
+Text Label 6500 3800 2    60   ~ 0
+MISO
+Text Label 6500 3900 2    60   ~ 0
+CS
+$Comp
+L CONN_01X02 P4
+U 1 1 57DDCD37
+P 1100 4050
+F 0 "P4" H 1100 4200 50  0000 C CNN
+F 1 "CONN_01X02" V 1200 4050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1100 4050 50  0001 C CNN
+F 3 "" H 1100 4050 50  0000 C CNN
+	1    1100 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 4000 1300 3800
+Wire Wire Line
+	1300 4100 1300 4300
+$Comp
+L WS2812B LED1
+U 1 1 57DDD1EE
+P 1600 5550
+F 0 "LED1" H 1600 5150 60  0000 C CNN
+F 1 "WS2812B" H 1600 5950 60  0000 C CNN
+F 2 "WS2812B:WS2812B" V 1550 5550 60  0001 C CNN
+F 3 "" V 1550 5550 60  0000 C CNN
+	1    1600 5550
+	1    0    0    -1  
+$EndComp
+Text Label 1100 5350 2    60   ~ 0
+VCC
+Text Label 2100 5750 0    60   ~ 0
+GND
+Text Label 2100 5350 0    60   ~ 0
+GPIO_2
+$EndSCHEMATC

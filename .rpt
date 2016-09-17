@@ -1,0 +1,11 @@
+** Drc report for /Users/emcniece/Documents/kicad/esp-multi-program/esp-multi-program.kicad_pcb **
+** Created on 2016-09-17 15:03:28 **
+
+** Found 0 DRC errors **
+
+** Found 1 unconnected pads **
+ErrType(2): Unconnected pads
+    @ (6.3314 in,4.5765 in): Pad 1 on F.Cu, Non-copper of SW2 net /GPIO_0
+    @ (6.3314 in,4.2635 in): Pad 1 on F.Cu, Non-copper of SW2
+
+** End of Report **
